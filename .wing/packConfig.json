@@ -1,0 +1,9 @@
+{
+    "useClip": false,
+    "maxImageWidth": 2048,
+    "maxImageHeight": 2048,
+    "defaultResPath": "d:\\Codes\\Games\\tank\\resource\\default.res.json",
+    "packGroups": {
+        "eui": true
+    }
+}

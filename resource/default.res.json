@@ -1,0 +1,129 @@
+{
+	"groups": [
+		{
+			"keys": "",
+			"name": "eui"
+		},
+		{
+			"keys": "eui-selected_png,eui-border_png,eui-header_png,eui-thumb_pb_png,eui-track_pb_png,eui-radiobutton_select_disabled_png,eui-radiobutton_select_down_png,eui-radiobutton_select_up_png,eui-radiobutton_unselect_png,eui-roundthumb_png,eui-track_sb_png,eui-thumb_png,eui-track_png,eui-tracklight_png,eui-handle_png,eui-off_png,eui-on_png,eui-checkbox_select_disabled_png,eui-checkbox_select_down_png,eui-checkbox_select_up_png,eui-checkbox_unselect_png,eui-button_down_png,eui-button_up_png",
+			"name": "eui"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/eui/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "eui-selected_png"
+		},
+		{
+			"url": "assets/eui/Panel/border.png",
+			"type": "image",
+			"name": "eui-border_png"
+		},
+		{
+			"url": "assets/eui/Panel/header.png",
+			"type": "image",
+			"name": "eui-header_png"
+		},
+		{
+			"url": "assets/eui/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "eui-thumb_pb_png"
+		},
+		{
+			"url": "assets/eui/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "eui-track_pb_png"
+		},
+		{
+			"url": "assets/eui/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "eui-radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/eui/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "eui-radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/eui/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "eui-radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/eui/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "eui-radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/eui/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "eui-roundthumb_png"
+		},
+		{
+			"url": "assets/eui/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "eui-track_sb_png"
+		},
+		{
+			"url": "assets/eui/Slider/thumb.png",
+			"type": "image",
+			"name": "eui-thumb_png"
+		},
+		{
+			"url": "assets/eui/Slider/track.png",
+			"type": "image",
+			"name": "eui-track_png"
+		},
+		{
+			"url": "assets/eui/Slider/tracklight.png",
+			"type": "image",
+			"name": "eui-tracklight_png"
+		},
+		{
+			"url": "assets/eui/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "eui-handle_png"
+		},
+		{
+			"url": "assets/eui/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "eui-off_png"
+		},
+		{
+			"url": "assets/eui/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "eui-on_png"
+		},
+		{
+			"url": "assets/eui/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "eui-checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/eui/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "eui-checkbox_select_down_png"
+		},
+		{
+			"url": "assets/eui/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "eui-checkbox_select_up_png"
+		},
+		{
+			"url": "assets/eui/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "eui-checkbox_unselect_png"
+		},
+		{
+			"url": "assets/eui/Button/button_down.png",
+			"type": "image",
+			"name": "eui-button_down_png"
+		},
+		{
+			"url": "assets/eui/Button/button_up.png",
+			"type": "image",
+			"name": "eui-button_up_png"
+		}
+	]
+}

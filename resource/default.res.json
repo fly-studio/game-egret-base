@@ -1,8 +1,8 @@
 {
 	"groups": [
 		{
-			"keys": "",
-			"name": "eui"
+			"keys": "hitler_png",
+			"name": "preload"
 		},
 		{
 			"keys": "eui-selected_png,eui-border_png,eui-header_png,eui-thumb_pb_png,eui-track_pb_png,eui-radiobutton_select_disabled_png,eui-radiobutton_select_down_png,eui-radiobutton_select_up_png,eui-radiobutton_unselect_png,eui-roundthumb_png,eui-track_sb_png,eui-thumb_png,eui-track_png,eui-tracklight_png,eui-handle_png,eui-off_png,eui-on_png,eui-checkbox_select_disabled_png,eui-checkbox_select_down_png,eui-checkbox_select_up_png,eui-checkbox_unselect_png,eui-button_down_png,eui-button_up_png",
@@ -124,6 +124,11 @@
 			"url": "assets/eui/Button/button_up.png",
 			"type": "image",
 			"name": "eui-button_up_png"
+		},
+		{
+			"url": "assets/Hitler.png",
+			"type": "image",
+			"name": "hitler_png"
 		}
 	]
 }

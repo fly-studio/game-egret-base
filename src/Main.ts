@@ -57,7 +57,7 @@ class Main extends eui.UILayer {
             resourceFile: "resource/default.res.json",
             path: "resource/"
         });
-        loadingView.groupList = [/*"preload",*/ "eui"];
+        loadingView.groupList = ["preload", "eui"];
         loadingView.themeList = ["resource/default.thm.json"];
         loadingView.addToStage();
         loadingView.load().then(() => this.createScene());

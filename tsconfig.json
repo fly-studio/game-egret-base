@@ -9,6 +9,7 @@
         "suppressImplicitAnyIndexErrors": true,
         "downlevelIteration": true,
         "experimentalDecorators": true,
+        "strictFunctionTypes": false,
         "lib": [
             "es6",
             "es7",

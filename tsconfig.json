@@ -2,8 +2,13 @@
     "compilerOptions": {
         "target": "es5",
         "outDir": "bin-debug",
-        "experimentalDecorators": true,
+        "declaration": true,
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "suppressImplicitAnyIndexErrors": true,
         "downlevelIteration": true,
+        "experimentalDecorators": true,
         "lib": [
             "es6",
             "es7",

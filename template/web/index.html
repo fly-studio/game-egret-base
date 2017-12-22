@@ -23,6 +23,7 @@
 	<script>
     var baseURI = '';
     var resURI = '';
+    var resVersion = '1.0';
     </script>
 </head>
 
@@ -40,6 +41,7 @@
          data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
     </div>
 <script>
+    document.querySelector('.egret-player').dataset.scaleMode = typeof window.orientation !== 'undefined' ? 'fixedNarrow' : 'showAll';
     var loadScript = function (list, callback) {
         var loaded = 0;
         var loadNext = function () {

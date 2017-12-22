@@ -2,72 +2,73 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Egret</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="full-screen" content="true" />
-    <meta name="screen-orientation" content="portrait" />
-    <meta name="x5-fullscreen" content="true" />
-    <meta name="360-fullscreen" content="true" />
-    <style>
-        html, body {
-            -ms-touch-action: none;
-            background: #888888;
-            padding: 0;
-            border: 0;
-            margin: 0;
-            height: 100%;
-        }
-    </style>
+	<meta charset="utf-8">
+	<title>Game Title</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="full-screen" content="true" />
+	<meta name="screen-orientation" content="portrait" />
+	<meta name="x5-fullscreen" content="true" />
+	<meta name="360-fullscreen" content="true" />
+	<style>
+		html, body {
+			-ms-touch-action: none;
+			background: #888888;
+			padding: 0;
+			border: 0;
+			margin: 0;
+			height: 100%;
+		}
+	</style>
 	<script>
-    var baseURI = '<{''|url nofilter}>/'; // ends with /
-	var resURI = '<{'img/XXXXX'|static nofilter}>/'; // ends with /
-    </script>
+	var baseURI = '<{''|url nofilter}>/'; // ends with /
+	var resURI = '<{'img/xxxxxxxxxxxxxxx'|static nofilter}>/'; // ends with /
+	var resVersion = '1.0';
+	</script>
 </head>
 
 <body>
-    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
-         data-entry-class="Main"
-         data-orientation="auto"
-         data-scale-mode="showAll"
-         data-frame-rate="30"
-         data-content-width="640"
-         data-content-height="1136"
-         data-show-paint-rect="false"
-         data-multi-fingered="2"
-         data-show-fps="false" data-show-log="false"
-         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
-    </div>
+	<div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+		 data-entry-class="Main"
+		 data-orientation="auto"
+		 data-scale-mode="showAll"
+		 data-frame-rate="30"
+		 data-content-width="640"
+		 data-content-height="1136"
+		 data-show-paint-rect="false"
+		 data-multi-fingered="2"
+		 data-show-fps="false" data-show-log="false"
+		 data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+	</div>
 <script>
-    document.querySelector('.egret-player').dataset.scaleMode = typeof window.orientation !== 'undefined' ? 'fixedNarrow' : 'showAll';
-    var loadScript = function (list, callback) {
-        var loaded = 0;
-        var loadNext = function () {
-            loadSingleScript(list[loaded], function () {
-                loaded++;
-                if (loaded >= list.length) {
-                    callback();
-                }
-                else {
-                    loadNext();
-                }
-            })
-        };
-        loadNext();
-    };
+	document.querySelector('.egret-player').dataset.scaleMode = typeof window.orientation !== 'undefined' ? 'fixedNarrow' : 'showAll';
+	var loadScript = function (list, callback) {
+		var loaded = 0;
+		var loadNext = function () {
+			loadSingleScript(list[loaded], function () {
+				loaded++;
+				if (loaded >= list.length) {
+					callback();
+				}
+				else {
+					loadNext();
+				}
+			})
+		};
+		loadNext();
+	};
 
-    var loadSingleScript = function (src, callback) {
-        var s = document.createElement('script');
-        s.async = false;
-        s.src = src;
-        s.addEventListener('load', function () {
-            s.parentNode.removeChild(s);
-            s.removeEventListener('load', arguments.callee, false);
-            callback();
-        }, false);
-        document.body.appendChild(s);
-    };
+	var loadSingleScript = function (src, callback) {
+		var s = document.createElement('script');
+		s.async = false;
+		s.src = layer.http.urlVersion(src, window.resVersion);
+		s.addEventListener('load', function () {
+			s.parentNode.removeChild(s);
+			s.removeEventListener('load', arguments.callee, false);
+			callback();
+		}, false);
+		document.body.appendChild(s);
+	};
 
 	var list = [
 		"<{'js/game/egret/v5.0/egret.min.js'|static nofilter}>",
@@ -81,7 +82,7 @@
 		"<{'js/axios/axios.min.js'|static nofilter}>",
 		"<{'js/game/_.min.js'|static nofilter}>",
 		"<{'js/game/egret/layer.min.js'|static nofilter}>",
-		"Your Main JS"
+		"<{'js/xxxxxxxxxxxxxxx/main.min.js'|static nofilter}>"
 	];
 	loadScript(list, function () {
 		/**

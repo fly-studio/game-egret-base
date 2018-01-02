@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "es5",
         "outDir": "bin-debug",
-        "declaration": true,
+        "declaration": false,
         "noFallthroughCasesInSwitch": true,
         "noUnusedLocals": true,
         "downlevelIteration": true,
